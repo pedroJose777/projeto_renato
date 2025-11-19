@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f9fbff;
+  color: #333;
+}
+
+header {
+  background: #5a4bdd;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.artigos-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+.artigo {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.artigo:hover {
+  transform: translateY(-5px);
+}
+
+.artigo h2 {
+  color: #4c3eb0;
+  margin-bottom: 0.6rem;
+}
+
+.artigo p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #5a4bdd;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4638b7;
+}
+
+footer {
+  background: #5a4bdd;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

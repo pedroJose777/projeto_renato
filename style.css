@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f9fbff;
+  color: #333;
+}
+
+header {
+  background: #5a4bdd;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px; /* espaçamento aumentado */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  background: #eef1ff;
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+.intro-text h2 {
+  color: #4c3eb0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background: #5a4bdd;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4638b7;
+}
+
+.intro-img img {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* FEATURES */
+.features {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.features h2 {
+  color: #4c3eb0;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #4c3eb0;
+  margin-bottom: 0.6rem;
+}
+
+.btn-card {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #5a4bdd;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-card:hover {
+  background: #4638b7;
+}
+
+/* MOTIVAÇÃO */
+.motivacao {
+  background: #dfe4ff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.motivacao h2 {
+  color: #4c3eb0;
+  margin-bottom: 1rem;
+}
+
+.motivacao p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background: #5a4bdd;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
