@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+
+    function validarLogin() {
+      const usuario = document.getElementById("usuario").value;
+      const senha = document.getElementById("senha").value;
+      const mensagem = document.getElementById("mensagem");
+
+      const usuarioCorreto = "admin";
+      const senhaCorreta = "1234";
+
+      mensagem.textContent = "";
+
+      if (usuario === usuarioCorreto && senha === senhaCorreta) {
+        window.location.href = "inicio.html";
+      } else {
+        mensagem.textContent = "Usuário ou senha incorretos!";
+        mensagem.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="bloco">
+    <h1>Login</h1>
+    <input type="text" id="usuario" placeholder="Usuário"><br>
+    <input type="password" id="senha" placeholder="Senha"><br>
+    <button onclick="validarLogin()">Entrar</button>
+    <p id="mensagem"></p>
+    </div>
+  </div>
+</body>
+</html>
